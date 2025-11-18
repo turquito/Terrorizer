@@ -181,6 +181,8 @@ void Pelota::update(float factorVel) {
 		vel.x *= -1;
 		pos.x = limites.getRight() - radio;
 		rebote = true;
+		midi->sendControlChange(7, 127);  // envio en mensaje midi cc7 para abrir un envío en ableton
+		ccOpenTime_1 = ofGetElapsedTimeMillis(); // cuenta el tiempo de envio del mensaje
 	}
 	
     // Pared de arriba

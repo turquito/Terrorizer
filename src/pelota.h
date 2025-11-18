@@ -64,6 +64,8 @@ public:
 	float tiempoDefuncion = 0;
 	float dulceEspera = 4.0f; 
 
+	int ccOpenTime_1;
+	
 private:
 	
 	ofRectangle limites;    // límites de movimiento
