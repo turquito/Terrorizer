@@ -4,26 +4,7 @@
 #include "midiSender.h"
 #include "pelota.h"
 #include "ofxGui.h"
-#include "controlGui.h"
 
-/*
---------------------------------------------------------------
- ofApp.h
-
- Clase principal de la aplicación openFrameworks.
-
- Gestiona:
-
-   - Setup general
-   - Update por frame
-   - Draw de elementos visuales
-   - Creación y actualización de pelotas
-   - Sincronización con MIDI
-   - Detección de colisiones
-   - Manejo de GUI, teclado, ventanas y FBOs
- 
---------------------------------------------------------------
-*/
 
 class ofApp : public ofBaseApp {
 public:
@@ -31,39 +12,48 @@ public:
 	void update();
 	void draw();
 	void exit();
-	
-	// Utilidades
-	void aplicarPixelado(float valor, bool usarLineal);
-	void nacenPelotas();        // generación de pelotas
-	void detectarChoques();     // detección de choques
-	void windowResized(int w, int h);
+	void resetPelotas();
 	
 	void keyPressed(int key);
+	//static void safeAllNotesOff();
 	
-	// Variables generales
-	float tiempoDefuncion = 0;      // momento en que murió la última pelota
-	float dulceEspera = 2.0f;       // segundos a esperar antes del reseteo o nacimiento
-	int NUM_PELOTAS;                // número de pelotas en el próximo nacimiento
-
-	bool laNada = false;            // si false = hay pelotas vivas
+	float lastDeathTime = 0;      // momento en que murió la última pelota
+	bool esperandoReset = false;   // indica que estamos esperando el respawn global
+	float resetDelay = 2.0f;       // segundos a esperar antes de resetear todas
+	int NUM_PELOTAS;
+	
 	bool showGUI;
-	bool info;
-	bool hacerNacer = false;
-	bool tiempoCumplido;            // ya pasó el tiempo de dulce espera, a nacer.
-
+	bool stop;
+	
 	ofFbo fbo;
+	ofFbo fboLowRes;  // segundo FBO para pixelado
 	ofFbo fboPixelado;
 	
+	// ofx controles
 	ofxPanel gui;
-	ofRectangle marco;
+	ofxGuiGroup creacion;
+	ofxIntSlider rangoRandom;
+	ofxIntSlider lifeSpan;
+	ofxToggle random, record, renovar, centro;
+	ofxFloatSlider factorVel;
 	
-	Controles control;
-	
+	ofxGuiGroup efectos;
+	ofxFloatSlider distorsion;
+	ofxFloatSlider ataque;
+	ofxFloatSlider release;
+	ofxFloatSlider reverb;
+	ofxFloatSlider tiempo;
+	ofxFloatSlider delay;
+	ofxFloatSlider feedback;
+	ofxFloatSlider filtro;
+	ofxMidiMessage cc;
+
+	int alpha;
 	
 private:
 	
-	vector<Pelota> pelotas;         // vector que contiene todas las pelotas en pantalla
-	MidiSender midi;                // módulo MIDI
-	
+	vector<Pelota> pelotas;
+	MidiSender midi;
+	void detectarColisiones();
 	
 };

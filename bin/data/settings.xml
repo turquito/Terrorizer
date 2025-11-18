@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Tablero_de_control>
+	<Setup_pelotero>
+		<Nro__de_bolas__q__w__>3</Nro__de_bolas__q__w__>
+		<Cant__aleatoria__k_>0</Cant__aleatoria__k_>
+		<Renovar_bolas__r_>1</Renovar_bolas__r_>
+		<Pos:_Centro_o_Mouse__c_>1</Pos:_Centro_o_Mouse__c_>
+		<Tiempo_de_vida__v_>1000</Tiempo_de_vida__v_>
+		<Velocidad__up__down_>1</Velocidad__up__down_>
+		<Grabar__g_>0</Grabar__g_>
+	</Setup_pelotero>
+	<Efectos>
+		<ataque__a__A_>4</ataque__a__A_>
+		<release__l__L_>40</release__l__L_>
+		<Saturacion__s__S_>0</Saturacion__s__S_>
+		<Filtro__i__I_>40</Filtro__i__I_>
+		<Tiempo__t__T_>0</Tiempo__t__T_>
+		<delay_wet__d__D_>0</delay_wet__d__D_>
+		<feedback__f__F_>0</feedback__f__F_>
+		<reverb__izq__der_>16</reverb__izq__der_>
+	</Efectos>
+</Tablero_de_control>

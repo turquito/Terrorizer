@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000BA66F2EB19EFA002C51E9 /* pelota.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000BA66E2EB19EFA002C51E9 /* pelota.cpp */; };
+		000BA6702EB19EFA002C51E9 /* midiSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000BA66C2EB19EFA002C51E9 /* midiSender.cpp */; };
+		000BA6792EB9FAFF002C51E9 /* notas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000BA6782EB9FAFA002C51E9 /* notas.cpp */; };
+		"09A05E2E-CCBC-433E-9803-999E8FAB64DC" /* ofxMidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "5361416B-71AB-4860-9F87-7923CBF4DB1A" /* ofxMidiOut.cpp */; };
+		"0B4E37B3-32A5-401D-B2F2-87F3C6FFC126" /* ofxColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "72BBCFFE-9C88-48D2-BEFF-718CE04A63A2" /* ofxColorPicker.cpp */; };
+		"107CEED5-7951-4D60-B092-47091DB3D500" /* ofxMidiClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "744C2141-9D38-4B2E-B46A-8361F3265E02" /* ofxMidiClock.cpp */; };
+		"1787E088-3C97-4DDA-88AD-88C842A2B04E" /* ofxMidiIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "F5943C88-D8B2-478F-925E-1517A7F9DE26" /* ofxMidiIn.cpp */; };
+		"196AED4C-70DE-4688-83DA-E9E27693E16A" /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "EE8FBA46-38EF-4B18-9569-BCF7B95319DA" /* ofxGuiGroup.cpp */; };
+		"36F222B5-714C-4B25-A8D2-CA6D4F88235C" /* ofxMidiMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "FB70D300-FD22-457D-8FDC-5E9F95BDFAFF" /* ofxMidiMessage.cpp */; };
+		"4304CCC1-3E7A-44FA-84A5-26CF4F3FF0A8" /* ofxMidiTimecode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "B669EB59-6108-4D3A-A0AA-5D3C4768A330" /* ofxMidiTimecode.cpp */; };
+		"484EE231-9185-465F-AF6D-AD8523E75082" /* ofxRtMidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "4A9EE2AA-BABE-46EB-8567-EFB9AD3767AA" /* ofxRtMidiOut.cpp */; };
+		"5F2ACAEA-3DB7-4AA8-A9CB-0B90AC06D009" /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "85C97EDE-9E28-45C4-8FA2-68DDB938E426" /* ofxSliderGroup.cpp */; };
+		"651FFAA1-288A-48E7-A111-C8C060ED1620" /* ofxInputField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "B04CACF5-BF9B-45AA-80FB-992ADC77E306" /* ofxInputField.cpp */; };
+		"67985D64-4FE2-494C-B24A-FD04172F7A86" /* ofxBaseMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "AE61B982-9822-4227-A8A6-003CDD9A484F" /* ofxBaseMidi.cpp */; };
+		"6867437C-EB0C-4FF8-B89B-77D9ADC95558" /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "B92B2DDA-3B12-46C2-96F7-CF2E56EE9B99" /* ofxLabel.cpp */; };
+		"6A7E2AE4-3218-491D-A243-C439F7D63888" /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "34CBED56-6D86-4BDA-83FB-DA0ADCC220B7" /* CoreMIDI.framework */; };
+		"7EF197A3-9985-482D-A0A1-172E9C5C7339" /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "F25080E5-8AB8-44DE-A530-A9DDE7B64D4D" /* ofxSlider.cpp */; };
+		"93E6FF13-1CC6-4995-A01F-53ADE61DE8EA" /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "4E668FC1-7FDA-4D42-A27D-82595F4EE53E" /* ofxToggle.cpp */; };
+		"A8632F58-E2C5-444B-BDC7-6AA75A7028C4" /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "B33275E5-8D81-4747-B7A0-4946FD0C2F10" /* ofxBaseGui.cpp */; };
+		"B485DA00-8D99-4E4A-83CF-5851F3B5EDAA" /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "C7C85B46-7AAB-45D9-AB3F-257BB469DCD7" /* RtMidi.cpp */; };
+		"C5BE78D8-399F-462A-BF6A-2F81AAF543B7" /* ofxMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "BE64D25A-FBEB-4D42-9D21-8D03615F5584" /* ofxMidi.cpp */; };
+		"C85EE2F1-6349-4806-94DA-621D0B5B5124" /* ofxRtMidiIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "DFC43DC7-73DD-469E-BB0B-2477E71110BC" /* ofxRtMidiIn.cpp */; };
+		"DA238419-937D-4ECB-8B67-87923908BD77" /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "262BACB5-D6BA-4E17-9112-904AC07EE1FE" /* ofxButton.cpp */; };
+		"E1D00783-CA29-4ED2-9B1F-0E904D5E3051" /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "07AD87BB-E684-4F3D-8B2D-41A28693B1B8" /* ofxPanel.cpp */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4A5B60F29BAAAE400C2D356 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000BA66B2EB19EFA002C51E9 /* midiSender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = midiSender.h; sourceTree = "<group>"; };
+		000BA66C2EB19EFA002C51E9 /* midiSender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midiSender.cpp; sourceTree = "<group>"; };
+		000BA66D2EB19EFA002C51E9 /* pelota.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pelota.h; sourceTree = "<group>"; };
+		000BA66E2EB19EFA002C51E9 /* pelota.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pelota.cpp; sourceTree = "<group>"; };
+		000BA6772EB9FAD4002C51E9 /* notas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = notas.h; sourceTree = "<group>"; };
+		000BA6782EB9FAFA002C51E9 /* notas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = notas.cpp; sourceTree = "<group>"; };
+		"013EAD8F-DB36-4BBF-9945-9AB88C59075E" /* ofxPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxPanel.h; sourceTree = "<group>"; };
+		"078AF62E-71E5-4801-81E9-7E16BEDD794E" /* ofxMidiClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxMidiClock.h; sourceTree = "<group>"; };
+		"07AD87BB-E684-4F3D-8B2D-41A28693B1B8" /* ofxPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPanel.cpp; sourceTree = "<group>"; };
+		"158A0ABA-5272-4249-A722-F50785349433" /* ofxBaseMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxBaseMidi.h; sourceTree = "<group>"; };
+		191CD6FA2847E21E0085CBB6 /* of.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = of.entitlements; sourceTree = "<group>"; };
+		191EF70929D778A400F35F26 /* openFrameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openFrameworks; path = ../../../libs/openFrameworks; sourceTree = SOURCE_ROOT; };
+		"25256845-DD44-4E54-889C-DF1F12EDC10F" /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RtMidi.h; sourceTree = "<group>"; };
+		"262BACB5-D6BA-4E17-9112-904AC07EE1FE" /* ofxButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
+		"2BDF07E3-1395-4BA1-B134-E6CA00E393DB" /* ofxRtMidiOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxRtMidiOut.h; sourceTree = "<group>"; };
+		"34CBED56-6D86-4BDA-83FB-DA0ADCC220B7" /* CoreMIDI.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		"41AC1E1B-F8FF-435B-8EFC-F6D6E872A7AA" /* ofxSliderGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
+		"4A9EE2AA-BABE-46EB-8567-EFB9AD3767AA" /* ofxRtMidiOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxRtMidiOut.cpp; sourceTree = "<group>"; };
+		"4E668FC1-7FDA-4D42-A27D-82595F4EE53E" /* ofxToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
+		"4F233A53-C422-4B4D-A560-4601BF0EB69C" /* ofxMidiMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxMidiMessage.h; sourceTree = "<group>"; };
+		"5361416B-71AB-4860-9F87-7923CBF4DB1A" /* ofxMidiOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMidiOut.cpp; sourceTree = "<group>"; };
+		"6D6DDEA0-138D-42A2-8F0B-B3112414EF0B" /* ofxGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxGui.h; sourceTree = "<group>"; };
+		"72BBCFFE-9C88-48D2-BEFF-718CE04A63A2" /* ofxColorPicker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxColorPicker.cpp; sourceTree = "<group>"; };
+		"744C2141-9D38-4B2E-B46A-8361F3265E02" /* ofxMidiClock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMidiClock.cpp; sourceTree = "<group>"; };
+		"7D903160-7A32-4214-A9AF-7B7E2671B87F" /* ofxSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxSlider.h; sourceTree = "<group>"; };
+		"7FF6CC46-209F-4775-B5B6-A241A4FBB449" /* ofxGuiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxGuiUtils.h; sourceTree = "<group>"; };
+		"8336C144-0048-4102-86BE-2BB75E99A843" /* ofxMidiTimecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxMidiTimecode.h; sourceTree = "<group>"; };
+		"85C97EDE-9E28-45C4-8FA2-68DDB938E426" /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSliderGroup.cpp; sourceTree = "<group>"; };
+		"954B0087-5B96-46E3-ABA7-B061F17117C0" /* ofxMidiOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxMidiOut.h; sourceTree = "<group>"; };
+		"A0F09F61-DB6C-4E9F-AB23-F2B01A77D240" /* ofxToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxToggle.h; sourceTree = "<group>"; };
+		"AA023217-0168-4E10-BA9D-E6B400D8AB9F" /* ofxInputField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxInputField.h; sourceTree = "<group>"; };
+		"AC883CA7-4621-4AA2-9983-31271E9F82AB" /* ofxMidiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxMidiConstants.h; sourceTree = "<group>"; };
+		"AE61B982-9822-4227-A8A6-003CDD9A484F" /* ofxBaseMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseMidi.cpp; sourceTree = "<group>"; };
+		"B04CACF5-BF9B-45AA-80FB-992ADC77E306" /* ofxInputField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxInputField.cpp; sourceTree = "<group>"; };
+		"B33275E5-8D81-4747-B7A0-4946FD0C2F10" /* ofxBaseGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseGui.cpp; sourceTree = "<group>"; };
+		"B669EB59-6108-4D3A-A0AA-5D3C4768A330" /* ofxMidiTimecode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMidiTimecode.cpp; sourceTree = "<group>"; };
+		"B92B2DDA-3B12-46C2-96F7-CF2E56EE9B99" /* ofxLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLabel.cpp; sourceTree = "<group>"; };
+		"BE64D25A-FBEB-4D42-9D21-8D03615F5584" /* ofxMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMidi.cpp; sourceTree = "<group>"; };
+		"BF897D2E-6111-43B7-8D5A-FE382E0DC781" /* ofxLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxLabel.h; sourceTree = "<group>"; };
+		"C11E7878-6DA5-4477-8DE9-7827EA0A543F" /* ofxMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxMidi.h; sourceTree = "<group>"; };
+		"C7C85B46-7AAB-45D9-AB3F-257BB469DCD7" /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
+		"CB345A71-D1DD-4445-914C-7DA068776586" /* ofxMidiIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxMidiIn.h; sourceTree = "<group>"; };
+		"CE8D53EF-D575-429B-AFA0-D3D442AFE24B" /* ofxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxButton.h; sourceTree = "<group>"; };
+		"D0DEDA32-B8FB-40E7-B272-56C54AE90970" /* ofxBaseGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxBaseGui.h; sourceTree = "<group>"; };
+		"D28DF27D-3E90-4EA4-BE06-7791367F6DF4" /* ofxRtMidiIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxRtMidiIn.h; sourceTree = "<group>"; };
+		"D8550497-9AF3-4530-AF5C-D3F2F4BD3F0B" /* ofxGuiGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxGuiGroup.h; sourceTree = "<group>"; };
+		"DFC43DC7-73DD-469E-BB0B-2477E71110BC" /* ofxRtMidiIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxRtMidiIn.cpp; sourceTree = "<group>"; };
+		E4B69B5B0A3A1756003C02F2 /* P y A - TF Ok1Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "P y A - TF Ok1Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		"E558A12B-F3B3-48CE-B11D-98C9A0AD38B6" /* ofxColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxColorPicker.h; sourceTree = "<group>"; };
+		"EE8FBA46-38EF-4B18-9569-BCF7B95319DA" /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroup.cpp; sourceTree = "<group>"; };
+		"F25080E5-8AB8-44DE-A530-A9DDE7B64D4D" /* ofxSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSlider.cpp; sourceTree = "<group>"; };
+		"F5943C88-D8B2-478F-925E-1517A7F9DE26" /* ofxMidiIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMidiIn.cpp; sourceTree = "<group>"; };
+		"F92F5930-54DE-4D28-96E6-20C87777A600" /* ofxMidiTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ofxMidiTypes.h; sourceTree = "<group>"; };
+		"FB70D300-FD22-457D-8FDC-5E9F95BDFAFF" /* ofxMidiMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMidiMessage.cpp; sourceTree = "<group>"; };
+		"FE2DF8DE-1687-4290-B3D2-4BEFAD2CCCFA" /* data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = data; path = bin/data; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				"6A7E2AE4-3218-491D-A243-C439F7D63888" /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		"0C736BF2-7A2A-4701-B34D-92E82F8D77EA" /* ofxMidi */ = {
+			isa = PBXGroup;
+			children = (
+				"2064E530-4665-49D2-9729-F29DB5D54B14" /* libs */,
+				"29B7915E-A0EE-41E3-A5F8-3346D4DB5CF2" /* src */,
+			);
+			path = ofxMidi;
+			sourceTree = "<group>";
+		};
+		"2064E530-4665-49D2-9729-F29DB5D54B14" /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				"8DC6CDCF-21F7-48C9-8E1E-FE900F31F046" /* rtmidi */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		"29B7915E-A0EE-41E3-A5F8-3346D4DB5CF2" /* src */ = {
+			isa = PBXGroup;
+			children = (
+				"AD1DF349-E015-443C-B364-CF8D70B5EE86" /* desktop */,
+				"AE61B982-9822-4227-A8A6-003CDD9A484F" /* ofxBaseMidi.cpp */,
+				"158A0ABA-5272-4249-A722-F50785349433" /* ofxBaseMidi.h */,
+				"BE64D25A-FBEB-4D42-9D21-8D03615F5584" /* ofxMidi.cpp */,
+				"C11E7878-6DA5-4477-8DE9-7827EA0A543F" /* ofxMidi.h */,
+				"744C2141-9D38-4B2E-B46A-8361F3265E02" /* ofxMidiClock.cpp */,
+				"078AF62E-71E5-4801-81E9-7E16BEDD794E" /* ofxMidiClock.h */,
+				"AC883CA7-4621-4AA2-9983-31271E9F82AB" /* ofxMidiConstants.h */,
+				"F5943C88-D8B2-478F-925E-1517A7F9DE26" /* ofxMidiIn.cpp */,
+				"CB345A71-D1DD-4445-914C-7DA068776586" /* ofxMidiIn.h */,
+				"FB70D300-FD22-457D-8FDC-5E9F95BDFAFF" /* ofxMidiMessage.cpp */,
+				"4F233A53-C422-4B4D-A560-4601BF0EB69C" /* ofxMidiMessage.h */,
+				"5361416B-71AB-4860-9F87-7923CBF4DB1A" /* ofxMidiOut.cpp */,
+				"954B0087-5B96-46E3-ABA7-B061F17117C0" /* ofxMidiOut.h */,
+				"B669EB59-6108-4D3A-A0AA-5D3C4768A330" /* ofxMidiTimecode.cpp */,
+				"8336C144-0048-4102-86BE-2BB75E99A843" /* ofxMidiTimecode.h */,
+				"F92F5930-54DE-4D28-96E6-20C87777A600" /* ofxMidiTypes.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		"2A6781A2-94E1-4EE9-A22F-A2108AC6A78B" /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				"34CBED56-6D86-4BDA-83FB-DA0ADCC220B7" /* CoreMIDI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = SOURCE_ROOT;
+		};
+		"3CE7196A-35CD-427C-BCC1-FB64E89E4B59" /* src */ = {
+			isa = PBXGroup;
+			children = (
+				"B33275E5-8D81-4747-B7A0-4946FD0C2F10" /* ofxBaseGui.cpp */,
+				"D0DEDA32-B8FB-40E7-B272-56C54AE90970" /* ofxBaseGui.h */,
+				"262BACB5-D6BA-4E17-9112-904AC07EE1FE" /* ofxButton.cpp */,
+				"CE8D53EF-D575-429B-AFA0-D3D442AFE24B" /* ofxButton.h */,
+				"72BBCFFE-9C88-48D2-BEFF-718CE04A63A2" /* ofxColorPicker.cpp */,
+				"E558A12B-F3B3-48CE-B11D-98C9A0AD38B6" /* ofxColorPicker.h */,
+				"6D6DDEA0-138D-42A2-8F0B-B3112414EF0B" /* ofxGui.h */,
+				"EE8FBA46-38EF-4B18-9569-BCF7B95319DA" /* ofxGuiGroup.cpp */,
+				"D8550497-9AF3-4530-AF5C-D3F2F4BD3F0B" /* ofxGuiGroup.h */,
+				"7FF6CC46-209F-4775-B5B6-A241A4FBB449" /* ofxGuiUtils.h */,
+				"B04CACF5-BF9B-45AA-80FB-992ADC77E306" /* ofxInputField.cpp */,
+				"AA023217-0168-4E10-BA9D-E6B400D8AB9F" /* ofxInputField.h */,
+				"B92B2DDA-3B12-46C2-96F7-CF2E56EE9B99" /* ofxLabel.cpp */,
+				"BF897D2E-6111-43B7-8D5A-FE382E0DC781" /* ofxLabel.h */,
+				"07AD87BB-E684-4F3D-8B2D-41A28693B1B8" /* ofxPanel.cpp */,
+				"013EAD8F-DB36-4BBF-9945-9AB88C59075E" /* ofxPanel.h */,
+				"F25080E5-8AB8-44DE-A530-A9DDE7B64D4D" /* ofxSlider.cpp */,
+				"7D903160-7A32-4214-A9AF-7B7E2671B87F" /* ofxSlider.h */,
+				"85C97EDE-9E28-45C4-8FA2-68DDB938E426" /* ofxSliderGroup.cpp */,
+				"41AC1E1B-F8FF-435B-8EFC-F6D6E872A7AA" /* ofxSliderGroup.h */,
+				"4E668FC1-7FDA-4D42-A27D-82595F4EE53E" /* ofxToggle.cpp */,
+				"A0F09F61-DB6C-4E9F-AB23-F2B01A77D240" /* ofxToggle.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		"8DC6CDCF-21F7-48C9-8E1E-FE900F31F046" /* rtmidi */ = {
+			isa = PBXGroup;
+			children = (
+				"C7C85B46-7AAB-45D9-AB3F-257BB469DCD7" /* RtMidi.cpp */,
+				"25256845-DD44-4E54-889C-DF1F12EDC10F" /* RtMidi.h */,
+			);
+			path = rtmidi;
+			sourceTree = "<group>";
+		};
+		"AD1DF349-E015-443C-B364-CF8D70B5EE86" /* desktop */ = {
+			isa = PBXGroup;
+			children = (
+				"DFC43DC7-73DD-469E-BB0B-2477E71110BC" /* ofxRtMidiIn.cpp */,
+				"D28DF27D-3E90-4EA4-BE06-7791367F6DF4" /* ofxRtMidiIn.h */,
+				"4A9EE2AA-BABE-46EB-8567-EFB9AD3767AA" /* ofxRtMidiOut.cpp */,
+				"2BDF07E3-1395-4BA1-B134-E6CA00E393DB" /* ofxRtMidiOut.h */,
+			);
+			path = desktop;
+			sourceTree = "<group>";
+		};
+		"AD7573BC-73AC-4209-98B9-9B93F441D7C7" /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				"3CE7196A-35CD-427C-BCC1-FB64E89E4B59" /* src */,
+			);
+			path = ofxGui;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				"AD7573BC-73AC-4209-98B9-9B93F441D7C7" /* ofxGui */,
+				"0C736BF2-7A2A-4701-B34D-92E82F8D77EA" /* ofxMidi */,
+			);
+			name = addons;
+			path = ../../../addons;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				191CD6FA2847E21E0085CBB6 /* of.entitlements */,
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				191EF70929D778A400F35F26 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				E4B69B5B0A3A1756003C02F2 /* P y A - TF Ok1Debug.app */,
+				"2A6781A2-94E1-4EE9-A22F-A2108AC6A78B" /* Frameworks */,
+				"FE2DF8DE-1687-4290-B3D2-4BEFAD2CCCFA" /* data */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				000BA6772EB9FAD4002C51E9 /* notas.h */,
+				000BA66B2EB19EFA002C51E9 /* midiSender.h */,
+				000BA66C2EB19EFA002C51E9 /* midiSender.cpp */,
+				000BA66D2EB19EFA002C51E9 /* pelota.h */,
+				000BA66E2EB19EFA002C51E9 /* pelota.cpp */,
+				000BA6782EB9FAFA002C51E9 /* notas.cpp */,
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* P y A - TF Ok1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "P y A - TF Ok1" */;
+			buildPhases = (
+				E42962A92163ECCD00A6A9E2 /* Run Script — Compile OF */,
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+				E4A5B60F29BAAAE400C2D356 /* CopyFiles */,
+				19B789C429E5AB4A0082E9B8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "P y A - TF Ok1";
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* P y A - TF Ok1Debug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "P y A - TF Ok1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* P y A - TF Ok1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B789C429E5AB4A0082E9B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E42962A92163ECCD00A6A9E2 /* Run Script — Compile OF */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script — Compile OF";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$OF_CORE_BUILD_COMMAND\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				"A8632F58-E2C5-444B-BDC7-6AA75A7028C4" /* ofxBaseGui.cpp in Sources */,
+				"DA238419-937D-4ECB-8B67-87923908BD77" /* ofxButton.cpp in Sources */,
+				"0B4E37B3-32A5-401D-B2F2-87F3C6FFC126" /* ofxColorPicker.cpp in Sources */,
+				"196AED4C-70DE-4688-83DA-E9E27693E16A" /* ofxGuiGroup.cpp in Sources */,
+				"651FFAA1-288A-48E7-A111-C8C060ED1620" /* ofxInputField.cpp in Sources */,
+				000BA66F2EB19EFA002C51E9 /* pelota.cpp in Sources */,
+				000BA6792EB9FAFF002C51E9 /* notas.cpp in Sources */,
+				000BA6702EB19EFA002C51E9 /* midiSender.cpp in Sources */,
+				"6867437C-EB0C-4FF8-B89B-77D9ADC95558" /* ofxLabel.cpp in Sources */,
+				"E1D00783-CA29-4ED2-9B1F-0E904D5E3051" /* ofxPanel.cpp in Sources */,
+				"7EF197A3-9985-482D-A0A1-172E9C5C7339" /* ofxSlider.cpp in Sources */,
+				"5F2ACAEA-3DB7-4AA8-A9CB-0B90AC06D009" /* ofxSliderGroup.cpp in Sources */,
+				"93E6FF13-1CC6-4995-A01F-53ADE61DE8EA" /* ofxToggle.cpp in Sources */,
+				"B485DA00-8D99-4E4A-83CF-5851F3B5EDAA" /* RtMidi.cpp in Sources */,
+				"C85EE2F1-6349-4806-94DA-621D0B5B5124" /* ofxRtMidiIn.cpp in Sources */,
+				"484EE231-9185-465F-AF6D-AD8523E75082" /* ofxRtMidiOut.cpp in Sources */,
+				"67985D64-4FE2-494C-B24A-FD04172F7A86" /* ofxBaseMidi.cpp in Sources */,
+				"C5BE78D8-399F-462A-BF6A-2F81AAF543B7" /* ofxMidi.cpp in Sources */,
+				"107CEED5-7951-4D60-B092-47091DB3D500" /* ofxMidiClock.cpp in Sources */,
+				"1787E088-3C97-4DDA-88AD-88C842A2B04E" /* ofxMidiIn.cpp in Sources */,
+				"36F222B5-714C-4B25-A8D2-CA6D4F88235C" /* ofxMidiMessage.cpp in Sources */,
+				"09A05E2E-CCBC-433E-9803-999E8FAB64DC" /* ofxMidiOut.cpp in Sources */,
+				"4304CCC1-3E7A-44FA-84A5-26CF4F3FF0A8" /* ofxMidiTimecode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = of.entitlements;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+				);
+				OTHER_CPLUSPLUSFLAGS = "-D__MACOSX_CORE__";
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = of.entitlements;
+				COPY_PHASE_STRIP = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+				);
+				OTHER_CPLUSPLUSFLAGS = "-D__MACOSX_CORE__";
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxGui/src,
+					../../../addons/ofxMidi/libs,
+					../../../addons/ofxMidi/libs/pgmidi,
+					../../../addons/ofxMidi/libs/rtmidi,
+					../../../addons/ofxMidi/src,
+					../../../addons/ofxMidi/src/desktop,
+					../../../addons/ofxMidi/src/ios,
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_DEBUG)",
+				);
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxGui/src,
+					../../../addons/ofxMidi/libs,
+					../../../addons/ofxMidi/libs/pgmidi,
+					../../../addons/ofxMidi/libs/rtmidi,
+					../../../addons/ofxMidi/src,
+					../../../addons/ofxMidi/src/desktop,
+					../../../addons/ofxMidi/src/ios,
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_RELEASE)",
+				);
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "P y A - TF Ok1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "P y A - TF Ok1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}

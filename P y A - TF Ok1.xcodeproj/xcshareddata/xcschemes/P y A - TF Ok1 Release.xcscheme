@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "P y A - Trabajo Final 01.app"
-               BlueprintName = "P y A - Trabajo Final 01"
-               ReferencedContainer = "container:P y A - Trabajo Final 01.xcodeproj">
+               BuildableName = "P y A - TF Ok1.app"
+               BlueprintName = "P y A - TF Ok1"
+               ReferencedContainer = "container:P y A - TF Ok1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "P y A - Trabajo Final 01.app"
-            BlueprintName = "P y A - Trabajo Final 01"
-            ReferencedContainer = "container:P y A - Trabajo Final 01.xcodeproj">
+            BuildableName = "P y A - TF Ok1.app"
+            BlueprintName = "P y A - TF Ok1"
+            ReferencedContainer = "container:P y A - TF Ok1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -54,9 +54,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "P y A - Trabajo Final 01.app"
-            BlueprintName = "P y A - Trabajo Final 01"
-            ReferencedContainer = "container:P y A - Trabajo Final 01.xcodeproj">
+            BuildableName = "P y A - TF Ok1.app"
+            BlueprintName = "P y A - TF Ok1"
+            ReferencedContainer = "container:P y A - TF Ok1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
        <EnvironmentVariables>
@@ -88,9 +88,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "P y A - Trabajo Final 01.app"
-            BlueprintName = "P y A - Trabajo Final 01"
-            ReferencedContainer = "container:P y A - Trabajo Final 01.xcodeproj">
+            BuildableName = "P y A - TF Ok1.app"
+            BlueprintName = "P y A - TF Ok1"
+            ReferencedContainer = "container:P y A - TF Ok1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
